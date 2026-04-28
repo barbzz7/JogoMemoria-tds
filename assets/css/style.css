@@ -11,6 +11,6 @@
 .container {
     display: grid; /*cria uma grade*/
     width: 100%;
-    max-width: ; /*cria um limite */
+    max-width: 800px ; /*cria um limite */
 
 }
