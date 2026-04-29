@@ -4,41 +4,54 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family: Arial, sans-serif;
+body {
+    background-color: black;
+    color: rgb(0, 0, 0);
     text-align: center;
-    background-color: #111;
-    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(https://i.pinimg.com/1200x/14/ea/e8/14eae8eaff1cf59156de6a601d5c8e79.jpg);
+    background-size: cover; 
 }
+.container {
 
-
-.container{
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    font-family: "Press Start 2P", cursive;
+     line-height: 1.2;
 }
-
 
 button{
-    padding: 10px;
-    margin: 10px 0;
-
-}
-
-
-.card{
-    height: 100px;
-    background-color: #333;
-    border-radius: 8px;
+    font-family: "Press Start 2P", cursive;
+    font-size: 12px;
+     border: 2px solid #fff;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
+    padding: 10px 12px;
+    background-color: #111;
+    color: #fff;
+
 }
 
-.card img{
-    width: 100%;
-    height: 100%;
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+     max-width: 600px;
+     margin: auto;
+    }
+
+.card {
+    background-color: #333;
+    padding: 5px;
+    border-radius: 10px;
+    border-radius: 10px;
+    width: 110px;   /* controla quantas colunas */
+}
+
+
+.card img {
+    width: 100px;
+    height: 140px;
     border-radius: 8px;
 }
 
