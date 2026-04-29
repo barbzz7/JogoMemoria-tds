@@ -1,16 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&family=Jersey+10&display=swap');
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none; /* personaliza os marcadores */
-    border: none;
 }
- 
-.container {
-    display: grid; /*cria uma grade*/
-    width: 100%;
-    max-width: 800px ; /*cria um limite */
+
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #111;
+    color: white;
+}
+
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+button{
+    padding: 10px;
+    margin: 10px 0;
 
 }
+
+
+.card{
+    height: 100px;
+    background-color: #333;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
