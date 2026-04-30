@@ -1,57 +1,109 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
+* {
+    margin: 0; 
+    /* tira margens que são padrão do navegador*/
+    padding: 0; 
+    /* tira espaçamento interno */
+    box-sizing: border-box; 
+    /* faz width/height incluir borda e padding
+       facilita controlar tamanho */
+}
 body {
-    background-color: black;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black; 
+    /* caso nao apareça a imagem */
+    padding: 20px; 
+    /* espaço nas bordas da página */
+    color: rgb(0, 0, 0); 
+    /* cor padrao */
+    text-align: center; 
+    /* centraliza textos */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    /* fonte padrão do site */
     background-image: url(https://i.pinimg.com/1200x/14/ea/e8/14eae8eaff1cf59156de6a601d5c8e79.jpg);
-    background-size: cover; 
+    /* imagem que usamos de fundo */
+    background-size: cover;
+    /* faz a imagem ocupar a tela */
 }
+
 .container {
-
     font-family: "Press Start 2P", cursive;
-     line-height: 1.2;
+    /* fonte estilo pixel*/
+    line-height: 1.2;
+    /* controla altura das linhas de texto */
+    display: flex;
+    /* ativando flexbox */
+    flex-direction: column;
+    /* coloca os elementos em coluna */
+    align-items: center;
+    /* centraliza tudo na horizontal */
+    gap: 15px;
+    /* espaço entre os elementos */
 }
-
-button{
+button {
     font-family: "Press Start 2P", cursive;
-    font-size: 12px;
-     border: 2px solid #fff;
-    cursor: pointer;
+    font-size: 8px;
+    border: 2px solid #fff;
     display: inline-block;
-    padding: 10px 12px;
+    padding: 5px 6px;
     background-color: #111;
     color: #fff;
+   }
 
-}
 
 .game {
     display: flex;
+    /* usa flexbox pra organizar cartas */
     flex-wrap: wrap;
+    /* permite quebrar linha não ficar tudo em uma linha só */
     justify-content: center;
+    /* centraliza as cartas */
     gap: 10px;
+    /* espaço entre as cartas */
     padding: 20px;
-     max-width: 600px;
-     margin: auto;
-    }
+    /* espaço interno */
+    max-width: 600px;
+    /* limita largura máxima */
+    margin: auto;
+    /* centraliza o bloco na página */
+}
 
 .card {
-    background-color: #333;
-    padding: 5px;
-    border-radius: 10px;
-    border-radius: 10px;
-    width: 110px;   /* controla quantas colunas */
+    padding: 1px;
+    /* pequeno espaçamento interno */
+    border-radius: 5px;
+    /* cantos arredondados */
+    width: 100px;
+    /* largura da carta (define quantas cabem na linha) */
+    height: 140px;
+    /* altura da carta */
+    background-image: url("https://i.pinimg.com/1200x/29/d0/ec/29d0ec51b00b50ea5ea420d893c27d2c.jpg");
+    /* imagem da carta FECHADA */
+    background-size: cover;
+    /* faz a imagem ocupar toda a carta */
+    background-position: center;
+    /* centraliza a imagem */
+    background-repeat: no-repeat;
+    /* evita repetir a imagem */
 }
 
 
 .card img {
     width: 100px;
+    /* ocupa toda a largura da carta */
     height: 140px;
+    /* ocupa toda a altura */
     border-radius: 8px;
+    /* deixa borda arredondada */
+    display: none;
+    /* ESCONDE a imagem no início */
+}
+.card.virada img {
+    display: block;
+    /* MOSTRA a imagem quando clicar */
 }
 
+.card.virada {
+    background-image: none;
+    /* remove a imagem da carta fechada
+       pra aparecer só o personagem */
+}

@@ -5,81 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da Memória - Naruto</title>
+
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!DOCTYPE html>
-    <html lang="pt-BR">
+    <div class="container">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Jogo da Memória - Naruto</title>
-        <link rel="stylesheet" href="./assets/css/style.css">
-    </head>
+        <h3>Jogo da Memória - Naruto</h3>
 
-    <body>
+        <div class="info">
+            <p>Pontuação: <span id="score">0</span></p>
+            <p>Jogadas: <span id="moves">0</span></p>
+        </div>
 
-        <div class="container">
+        <button id="reset">Reiniciar</button>
 
-            <h3>Jogo da Memória - Naruto</h3>
+        <div class="game">
 
-            <div class="info">
-                <p>Pontuação: <span id="score">0</span></p>
-                <p>Jogadas: <span id="moves">0</span></p>
+            <div class="card">
+                <img id="img1" src="https://i.pinimg.com/736x/0b/f2/f2/0bf2f25d71a8ab0a24838643a447a6c4.jpg">
             </div>
 
-            <button id="reset">Reiniciar</button>
+            <div class="card">
+                <img id="img2"src="https://i.pinimg.com/736x/0b/f2/f2/0bf2f25d71a8ab0a24838643a447a6c4.jpg">
+            </div>
 
-            <div class="game">
+            <div class="card">
+                <img id="img3" src="https://i.pinimg.com/474x/8b/05/1d/8b051d4bcec2980b95db012c83be7959.jpg">
+            </div>
 
-                <div class="card">
-                    <img src="https://i.pinimg.com/736x/0b/f2/f2/0bf2f25d71a8ab0a24838643a447a6c4.jpg">
-                </div>
+            <div class="card">
+                <img id="img4" src="https://i.pinimg.com/474x/8b/05/1d/8b051d4bcec2980b95db012c83be7959.jpg">
+            </div>
 
-                <div class="card">
-                    <img src="https://i.pinimg.com/736x/0b/f2/f2/0bf2f25d71a8ab0a24838643a447a6c4.jpg">
-                </div>
+            <div class="card">
+                <img id="img5" src="https://i.pinimg.com/564x/59/eb/47/59eb47c2a9fe069c69c93bdd2afd47b4.jpg">
+            </div>
 
-                <div class="card">
-                    <img src="https://i.pinimg.com/474x/8b/05/1d/8b051d4bcec2980b95db012c83be7959.jpg">
-                </div>
+            <div class="card">
+                <img id="img6" src="https://i.pinimg.com/564x/59/eb/47/59eb47c2a9fe069c69c93bdd2afd47b4.jpg">
+            </div>
 
-                <div class="card">
-                    <img src="https://i.pinimg.com/474x/8b/05/1d/8b051d4bcec2980b95db012c83be7959.jpg">
-                </div>
+            <div class="card">
+                <img id="img7" src="https://i.pinimg.com/564x/85/25/61/8525611472f9996e204edc911d9de02d.jpg">
+            </div>
 
-                <div class="card">
-                    <img src="https://i.pinimg.com/564x/59/eb/47/59eb47c2a9fe069c69c93bdd2afd47b4.jpg">
-                </div>
+            <div class="card">
+                <img id="img8" src="https://i.pinimg.com/564x/85/25/61/8525611472f9996e204edc911d9de02d.jpg">
+            </div>
 
-                <div class="card">
-                    <img src="https://i.pinimg.com/564x/59/eb/47/59eb47c2a9fe069c69c93bdd2afd47b4.jpg">
-                </div>
+            <div class="card">
+                <img id="img9" src="https://i.pinimg.com/474x/4b/3e/bf/4b3ebf242fe4aa12fcae8ccadccd2982.jpg">
+            </div>
 
-                <div class="card">
-                    <img src="https://i.pinimg.com/564x/85/25/61/8525611472f9996e204edc911d9de02d.jpg">
-                </div>
-
-                <div class="card">
-                    <img src="https://i.pinimg.com/564x/85/25/61/8525611472f9996e204edc911d9de02d.jpg">
-                </div>
-
-                <div class="card">
-                    <img src="https://i.pinimg.com/474x/4b/3e/bf/4b3ebf242fe4aa12fcae8ccadccd2982.jpg">
-                </div>
-
-                <div class="card">
-                    <img src="https://i.pinimg.com/474x/4b/3e/bf/4b3ebf242fe4aa12fcae8ccadccd2982.jpg">
-                </div>
-
+            <div class="card">
+                <img id="img10" src="https://i.pinimg.com/474x/4b/3e/bf/4b3ebf242fe4aa12fcae8ccadccd2982.jpg">
             </div>
 
         </div>
 
-        <script src="script.js"></script>
-    </body>
+    </div>
 
-    </html>
+    <script src="./a.js"></script>
+</body>
+
+</html>
